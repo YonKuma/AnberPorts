@@ -5,6 +5,7 @@ BINDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )/AnberP
 
 # system
 export LD_LIBRARY_PATH=$GAMEDIR/lib:$LIBDIR:/usr/lib
+export LD_PRELOAD="$LIBDIR/libpng16.so"
 
 cd "$GAMEDIR"
 
